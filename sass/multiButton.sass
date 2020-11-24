@@ -1,0 +1,36 @@
+.buttons
+  position: fixed
+  right: 40px
+  bottom: 40px
+  display: flex
+  flex-direction: column-reverse
+  align-items: center
+  z-index: 1000
+.multiButton
+  width: 45px
+  height: 45px
+  border-radius: 50px
+  font-size: 25px
+  transition: .2s
+  background-color: white
+  border: 1px solid red
+  color: red
+  &_disabled
+    border: none
+    background-color: red
+    color: white
+  &:enabled
+    outline: none
+
+.subButton
+  @extend .multiButton
+  width: 35px
+  height: 35px
+  margin-bottom: 10px
+  font-size: 15px
+  transition: .5s
+  &_disabled
+    position: absolute
+    margin-bottom: -4px
+    z-index: -1
+    opacity: 0

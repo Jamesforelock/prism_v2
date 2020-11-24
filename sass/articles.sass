@@ -1,0 +1,97 @@
+.articles
+    opacity: 0
+.article
+    border-radius: 0
+    margin-top: 20px
+    color: black
+    transition: .6s
+    &_mini
+        height: 200px
+        .article__imgContainer
+            height: 200px
+            width: 200px
+        .article__img
+            height: 200px
+            width: 200px
+        &:hover .article__img
+            -moz-transform: none
+            -o-transform: none
+            -webkit-transform: none
+    &_edit
+        .article__imgContainer
+            height: 310px
+        .article__img
+            height: 310px
+    &_added
+        margin-top: -15px
+        color: white
+        background-color: rgba(0, 0, 0, 0.7)
+        & .article__title a
+            color: white
+        &:nth-child(1)
+            margin-top: 0
+        & .article__readMore
+            color: gold
+        & .text-muted
+            color: white !important
+    &__readMore
+        font-weight: 500
+        color: #006b00
+        &:hover
+            text-decoration: none
+            transition: .1s
+    &__title
+        font-size: 25px
+        text-transform: uppercase
+        text-align: center
+    &__type
+        display: flex
+        justify-content: center
+    &__btn
+        color: darkgray
+        cursor: pointer
+        transition: .1s
+        &_add:hover
+            color: forestgreen
+        &_delete:hover
+            color: #ff0000
+    &__imgContainer
+        height: 270px
+        display: flex
+        align-items: center
+        overflow: hidden
+    &__img
+        width: 100%
+        min-height: 270px
+        border-radius: 0
+        opacity: 0.8
+        -moz-transition: all 1s ease-out //для Firefox
+        -o-transition: all 1s ease-out //для Opera
+        -webkit-transition: all 1s ease-out //для Chrome, Android Browser, Safari
+    &:hover img
+        -moz-transform: scale(1.1)
+        -o-transform: scale(1.1)
+        -webkit-transform: scale(1.1)
+        opacity: 1
+    &__text
+        min-height: 120px
+        font-size: 13px
+        text-align: justify
+    &__date
+        align-self: flex-end
+        text-align: center
+    .editPanel
+        display: flex
+        justify-content: flex-end
+        opacity: 0.5
+        transition: .2s
+        &:hover
+            opacity: 1
+        &__icon
+            margin-right: 20px
+            color: #acacac
+            cursor: pointer
+            font-size: 18px
+            &:hover
+                transition: .2s
+                color: red

@@ -1,0 +1,23 @@
+~String without "_" - list title, with "_" - list item, "#" - end of list
+Opening hours
+_Monday: 9:00-22:00
+_Tuesday: 9:00-22:00
+_Wednesday: 9:00-22:00
+_Thursday: 9:00-22:00
+_Friday: 9:00-00:00
+_Saturday: 9:00-00:00
+_Sunday: 9:00-18:00
+#
+Locations
+_Location 1:
+_944 Glenholme Court
+_Tiffin, OH 44883
+_
+_Location 2:
+_921 Schoolhouse Court
+_New Bern, NC 28560
+#
+Contacts
+_Phone: 054 / 9923
+_E-mail: vistavca@gmail.com
+#

@@ -17,7 +17,7 @@ if($user['type'] === 'admin'){
         $description = mysqli_real_escape_string($conn, htmlspecialchars($_POST['text']));
         if(isset($_POST['imagePath'])) { // Если был также загружен путь к изображению
             $imagePath = $_SERVER['DOCUMENT_ROOT'] . '/vistavca/'.getImagePath($conn, $id, $type);
-            if($_POST['imagePath'] == "cleared") { // Если путь картинку следует удалить
+            if($_POST['imagePath'] == "cleared") { // Если картинку следует удалить
                 unlink($imagePath); // Удаляем картинку
                 $imageName = ""; // Присваиваем названию картинки пустую строку и загружаем в БД
                 // Осуществляем запрос на изменение статьи

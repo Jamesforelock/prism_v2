@@ -22,8 +22,10 @@ function getUserFromDB($conn, $table, $login) {
         $user['type'] = $table;
         $user['description'] = $row['Description'];
         $user['picture'] = $row['Picture'];
+        // Если у пользователя нет фото
         $user['login'] = null;
     }
+
     return $user;
 }
 
@@ -45,7 +47,8 @@ $login = $user['login'];
 $name = $user['name'];
 $userType = $user['type'];
 $description = $user['description'];
-$pictureName = $user['picture'];
+$pictureName = $user['picture'] ? $user['picture'] : 'noPhoto_u.jpg';
+
 
 ?>
 
